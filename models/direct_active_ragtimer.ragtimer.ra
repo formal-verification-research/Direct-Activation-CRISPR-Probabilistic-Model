@@ -1,0 +1,58 @@
+# Line 1: Chemical Names
+G_d	md	d	S_A	g_Ap	g_An	c_Ap	c_An	D_A	C_Ap	C_An	C_Ap_An	
+g_Bp	c_Bp	g_Bn	c_Bn	D_B	C_Bp	C_Bn	C_Bp_Bn	
+g_Cp	c_Cp	g_Cn	c_Cn	D_C	C_Cp	C_Cn	C_Cp_Cn	
+m_C	Y_C	C_A_An	C_A_Ap_An	
+
+# Line 2: Initial Conditions
+9	0	0	40	0	0	0	0	40	0	0	0	
+0	0	0	0	40	0	0	0	
+0	0	0	0	40	0	0	0	
+0	0	0	0	
+
+# Line 3: Target Conditions (all set to -1 if unspecified)
+-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
+-1	-1	-1	-1	-1	-1	-1	-1	
+-1	-1	-1	-1	-1	-1	-1	-1	
+-1	40	-1	-1	
+
+# Line 4 onwards: Reactions
+R1	G_d	>	md	G_d	0.0000931
+R2	md	>	d	md	3.59
+R3	d	>	0	0.000416
+R4	md	>	0	0.0067
+R5	S_A	>	g_An	S_A	0.0000912
+R6	g_An	>	0	0.0067
+R7	d	g_Ap	>	c_Ap	0.001848
+R8	c_Ap	>	d	g_Ap	0.000416
+R9	d	g_An	>	c_An	0.001848
+R10	c_An	>	d	g_An	0.000416
+R11	c_Ap	D_A	>	C_Ap	0.0000483
+R12	C_Ap	>	c_Ap	D_A	0.000416
+R13	c_An	D_A	>	C_An	0.0000483
+R14	C_An	>	c_An	D_A	0.000416
+R15	c_An	C_Ap	>	C_Ap_An	0.0000483
+R16	C_Ap_An	>	c_An	C_Ap	0.000416
+R17	c_Ap	C_An	>	C_Ap_An	0.0000483
+R18	C_Ap_An	>	c_Ap	C_An	0.000416
+R19	D_A	>	g_Cp	D_A	0.019
+R20	g_Cp	>	0	0.0067
+R21	d	g_Cp	>	c_Cp	0.001848
+R22	c_Cp	>	d	g_Cp	0.000416
+R23	d	g_Cn	>	c_Cn	0.001848
+R24	c_Cn	>	d	g_Cn	0.000416
+R25	c_Cp	D_C	>	C_Cp	0.0000483
+R26	C_Cp	>	c_Cp	D_C	0.000416
+R27	c_Cn	D_C	>	C_Cn	0.0000483
+R28	C_Cn	>	c_Cn	D_C	0.000416
+R29	c_Cn	C_Cp	>	C_Cp_Cn	0.0000483
+R30	C_Cp_Cn	>	c_Cn	C_Cp	0.000416
+R31	c_Cp	C_Cn	>	C_Cp_Cn	0.0000483
+R32	C_Cp_Cn	>	c_Cp	C_Cn	0.000416
+R33	D_C	>	m_C	D_C	0.0016
+R34	C_Cp	>	m_C	C_Cp	0.0352
+R35	C_Cp_Cn	>	m_C	C_Cp_Cn	0.00391
+R36	C_Cn	>	m_C	C_Cn	0.0001778
+R37	m_C	>	Y_C	m_C	1.22
+R38	m_C	>	0	0.0067
+R39	Y_C	>	0	0.000416
