@@ -1,22 +1,6 @@
-# Line 1: Chemical Names
-G_d	md	d	S_A	g_Ap	g_An	c_Ap	c_An	D_A	C_Ap	C_An	C_Ap_An	
-g_Bp	c_Bp	g_Bn	c_Bn	D_B	C_Bp	C_Bn	C_Bp_Bn	
-g_Cp	c_Cp	g_Cn	c_Cn	D_C	C_Cp	C_Cn	C_Cp_Cn	
-m_C	Y_C	C_A_An	C_A_Ap_An	
-
-# Line 2: Initial Conditions
-9	0	0	40	0	0	0	0	40	0	0	0	
-0	0	0	0	40	0	0	0	
-0	0	0	0	40	0	0	0	
-0	0	0	0	
-
-# Line 3: Target Conditions (all set to -1 if unspecified)
--1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	
--1	-1	-1	-1	-1	-1	-1	-1	
--1	-1	-1	-1	-1	-1	-1	-1	
--1	40	-1	-1	
-
-# Line 4 onwards: Reactions
+G_d	md	d	S_A	g_Ap	g_An	c_Ap	c_An	D_A	C_Ap	C_An	C_Ap_An	g_Bp	c_Bp	g_Bn	c_Bn	D_B	C_Bp	C_Bn	C_Bp_Bn	g_Cp	c_Cp	g_Cn	c_Cn	D_C	C_Cp	C_Cn	C_Cp_Cn	m_C	Y_C	C_A_An	C_A_Ap_An
+9	0	0	40	0	0	0	0	40	0	0	0	0	0	0	0	40	0	0	0	0	0	0	0	40	0	0	0	0	0	0	0
+-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	4800	-1	-1
 R1	G_d	>	md	G_d	0.0000931
 R2	md	>	d	md	3.59
 R3	d	>	0	0.000416
